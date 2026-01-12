@@ -15,6 +15,7 @@ return new class extends Migration
            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
            $table->string('theme');
            $table->string('lang');
+           $table->timestamps();
        });
     }
 
