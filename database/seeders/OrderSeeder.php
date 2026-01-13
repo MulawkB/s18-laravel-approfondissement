@@ -11,8 +11,8 @@ class OrderSeeder extends Seeder
     {
         $user = User::where('email', 'test@example.com')->first();
 
-        $user->orders->create([
-            'amount' => '50.00',
+        $user->orders()->create([
+            'amount' => 50.00,
             'status'  => 'paid'
         ]);
     }

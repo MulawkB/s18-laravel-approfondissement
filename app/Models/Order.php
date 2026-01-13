@@ -12,6 +12,6 @@ class Order extends Model
     ];
     public function user()
     {
-        return $this->belongsToMany(User::class); // Le commentaire appartient à un article
+        return $this->belongsTo(User::class);
     }
 }
