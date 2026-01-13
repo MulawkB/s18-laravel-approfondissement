@@ -10,7 +10,6 @@ class Settings extends Model
         'theme',
         'lang',
     ];
-
     public function user()
     {
         return $this->belongsTo(User::class);
